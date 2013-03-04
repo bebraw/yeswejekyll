@@ -7,4 +7,12 @@ js: index
 
 # About
 
-Just some information about the site and its structure
+{% include about.md %}
+
+## License
+
+{% include license.md %}
+
+## Getting Started
+
+
