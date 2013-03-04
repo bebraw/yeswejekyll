@@ -130,22 +130,32 @@ Okay, it is not particularly pretty yet but it still counts I guess. In case you
 
 Just having access to posts this way is not that useful. It would be very handy to be able to display existing posts somehow. As it happens there are a few ways. We can tap into Liquid Templating like this for instance:
 
-    {{ "{% for post in site.posts offset: 0 limit: 10 " }}%}
-        <h2><a href="{{ "{{ site.prefix " }}}}{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a></h2>
-        {{ "{{ post.date | date_to_string " }}}}
-        {{ "{{ post.content " }}}}
-        <hr />
-    {{ "{% endfor " }}%}
+{% highlight html %}
+{{ "{% for post in site.posts offset: 0 limit: 10 " }}%}
+    <h2>
+        <a href="{{ "{{ site.prefix " }}}}{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a>
+    </h2>
+    {{ "{{ post.date | date_to_string " }}}}
+    {{ "{{ post.content " }}}}
+    <hr />
+{{ "{% endfor " }}%}
+{% endhighlight %}
 
 As this might not be enough always, we can also tap into [pagination](https://github.com/mojombo/jekyll/wiki/Pagination).
 
 If we want to show a blog archive, we can do something along this:
 
-    <ul>
-    {{ "{% for post in site.posts " }}%}
-        <li><div class="date">{{ "{{ post.date | date_to_string " }}}}</div><a href="{{ "{{ site.prefix  " }}}}{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a></li>
-    {{ "{% endfor " }}%}
-    </ul>
+
+{% highlight html %}
+<ul>
+{{ "{% for post in site.posts " }}%}
+    <li>
+        <div class="date">{{ "{{ post.date | date_to_string " }}}}</div>
+        <a href="{{ "{{ site.prefix  " }}}}{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a>
+    </li>
+{{ "{% endfor " }}%}
+</ul>
+{% endhighlight %}
 
 Sometimes we might have been an active blogger already and could have some content we would like to migrate to Jekyll for a reason or another. There are [various migration scripts](https://github.com/mojombo/jekyll/wiki/Blog-Migrations) available that help in this particular task.
 
