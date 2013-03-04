@@ -112,13 +112,46 @@ js: index
 
 As discussed earlier it is possible to refer to these properties at layout defined here. In this case I inject there information about page title and custom CSS and JavaScript files used. This is more of my own convention. In case either `css` or `js` is not provided I simply will not render the script reference in my layout.
 
-It is very easy to achieve this using an `if` tag like this: 
+It is very easy to achieve this using an `if` tag like this:
 
-    {{ "{% if page.css " }}%}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" />{{ "{% endif " }}%}
+    {{ "{% if page.css " }}%}<link rel="stylesheet" href="/css/{{ "{{ page.css " }}}}.css" type="text/css" />{{ "{% endif " }}%}
 
 ### \_posts
 
-TBD
+Jekyll provides some utilities that make it easier to maintain a blog with it. `_posts`, as you might guess, will contain your blog posts should you want to write some. It uses a specific kind of naming scheme. Rather than making these files by hand I recommend using [jekyll-bootstrap Rakefile](https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile) instead. Just copy that to the root of your project and investigate it.
+
+In order to generate a blog post using it, first create `_posts` directory and after that simply run `rake post title="First Post"`. You may additionally pass date and tags parameters.
+
+Examine the generated file and fill in the details. By default it seems to point at `post` layout and contain an extra include. You may fix both of these issues by tweaking the Rakefile a little bit.
+
+Now that we have our post how do we refer to it? In case you did not set a category for the post, you may use the default URL scheme. Navigate to /year/month/day/first-post.html to see your mighty post. You are an official blogger now!
+
+Okay, it is not particularly pretty yet but it still counts I guess. In case you are not happy with the URL schema, you can change it using [permalink configuration](https://github.com/mojombo/jekyll/wiki/Permalinks). It defaults to `date` but alternatively you may use either `pretty` (hides .html) or `none` if you feel like not showing the date at all.
+
+Just having access to posts this way is not that useful. It would be very handy to be able to display existing posts somehow. As it happens there are a few ways. We can tap into Liquid Templating like this for instance:
+
+    {{ "{% for post in site.posts offset: 0 limit: 10 " }}%}
+        <h2><a href="{{ "{{ site.prefix " }}}}{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a></h2>
+        {{ "{{ post.date | date_to_string " }}}}
+        {{ "{{ post.content " }}}}
+        <hr />
+    {{ "{% endfor " }}%}
+
+As this might not be enough always, we can also tap into [pagination](https://github.com/mojombo/jekyll/wiki/Pagination).
+
+If we want to show a blog archive, we can do something along this:
+
+    <ul>
+    {{ "{% for post in site.posts " }}%}
+        <li><div class="date">{{ "{{ post.date | date_to_string " }}}}</div><a href="{{ "{{ site.prefix  " }}}}{{ "{{ post.url " }}}}">{{ "{{ post.title " }}}}</a></li>
+    {{ "{% endfor " }}%}
+    </ul>
+
+Sometimes we might have been an active blogger already and could have some content we would like to migrate to Jekyll for a reason or another. There are [various migration scripts](https://github.com/mojombo/jekyll/wiki/Blog-Migrations) available that help in this particular task.
+
+To make it easier for your readers to consume your blog you might want to provide a syndication feed. I have set up [an example of Atom](https://github.com/bebraw/geekcollision-site/blob/master/atom.xml).
+
+And if you just want to blog and rather not care about the technical details, look into [Octopress](http://octopress.org/), a blogging framework built on top of Jekyll. It takes care of the boilerplate needed. After that you just have to come up with the content (the easy part).
 
 ### \_site
 
