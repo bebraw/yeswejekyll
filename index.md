@@ -69,7 +69,7 @@ This setup makes the default `jekyll` command run a development server that gene
 
 > I highly recommend setting up [LiveReload](http://livereload.com/) or a similar tool in order to eliminate the need to refresh the browser manual during development. I will get back to this when discussing advanced tricks. TODO: anchor
 
-[Pygments](http://pygments.org/) is a very popular highlighting generator. You simply just need to use the `highlight` tag within your source. I will get into this back later when I discuss syntax. TODO: anchor
+[Pygments](http://pygments.org/) is a very popular highlighting generator. You simply just need to use the `highlight` tag within your source. This too will be covered in advanced tricks. TODO: anchor
 
 One interesting property of `_config` is the fact that you may refer to its items within templates. You can refer to these items using `{{ "{{ site.property " }}}}` kind of syntax. I will get back to this in the next section.
 
@@ -161,19 +161,23 @@ This directory contains Jekyll output. Usually you will want to exclude this dir
 
 In case you want to understand better how Jekyll works investigate the output with care.
 
-## Understanding Templating
+## Case Study - Koodilehto Site
 
-TODO: site-wide configuration
+TBD
 
-Markdown, [pygments tag](http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll)
+## From Meek to Neat with Foundation
+
+TBD. Go through basics of Foundation.
 
 ## Advanced Tricks
 
 TBD
 
-## Styling
+### Syntax Highlighting with Pygments
 
-TBD. Go through basics of Foundation.
+Markdown, [pygments tag](http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll)
+
+TBD
 
 ### Setting Up Grunt
 
@@ -187,6 +191,6 @@ TBD
 
 TBD
 
-### Setting Up RSS
+
 
 ## Conclusion
