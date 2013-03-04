@@ -51,7 +51,7 @@ According to the [official documentation](https://github.com/mojombo/jekyll/wiki
 
 In addition it is a good idea to define a `.gitignore` that contains that `_site` directory. Usually it is something you do not want to version.
 
-### _config.yml
+### \_config.yml
 
 `_config.yml` contains site-wide configuration. It may also be used to define some defaults which Jekyll uses during generation. I recommend setting the following at least to conform with GitHubsettings:
 
@@ -69,29 +69,37 @@ This setup makes the default `jekyll` command run a development server that gene
 
 [Pygments](http://pygments.org/) is a very popular highlighting generator. You simply just need to use the `highlight` tag within your source. I will get into this back later when I discuss syntax. TODO: anchor
 
-One interesting property of `_config` is the fact that you may refer to its items within templates. I will get back implications of this later at... TODO: anchor
+One interesting property of `_config` is the fact that you may refer to its items within templates. You can refer to these items using `{{ "{{ site.property " }}}}` kind of syntax. I will get back implications of this later at... TODO: anchor
 
-### _includes
+### \_includes
 
-TBD
+The `_includes` directory will contain data which you may include to the pages of your project using specific syntax:
 
-### _layouts
+    {{ "{% include about.md " }}%}
 
-TBD
+As you might have noticed I decided to use `md` extension in my include. This signifies the fact that I am using [Markdown syntax](http://daringfireball.net/projects/markdown/syntax) in this particular file.
 
-### _posts
+Besides HTML and Markdown also [Textile](http://redcloth.org/textile) is supported. I tend to favor Markdown due to the fact that it is used commonly on GitHub and Stack Overflow. And the syntax is quite nice once you get used to it.
 
-TBD
+### \_layouts
 
-### _site
+As you might guess from the name `_layouts` contains the layout files of the project. These layouts form the literal backbone of your project. You will usually define at least some sort of a default template and perhaps a couple of auxiliary ones depending on your purposes.
 
-TBD
+If you are feeling particularly lazy and unimaginative, just pick [HTML5 Boilerplate](http://html5boilerplate.com/) and build your default layout based on that. You will need to remember to do one very important thing, however. Include a `{{ "{{ content " }}}}` tag where you want actual page content to be injected.
 
 ### index.html
 
 TBD
 
-## Understanding YAML Front Matter
+### Understanding YAML Front Matter
+
+TBD
+
+### \_posts
+
+TBD
+
+### \_site
 
 TBD
 
