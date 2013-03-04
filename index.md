@@ -55,7 +55,7 @@ In addition it is a good idea to define a `.gitignore` that contains that `_site
 
 ### \_config.yml
 
-`_config.yml` contains site-wide configuration. It may also be used to define some defaults which Jekyll uses during generation. I recommend setting the following at least to conform with GitHubsettings:
+`_config.yml` contains site-wide configuration. It may also be used to define some defaults which Jekyll uses during generation. I recommend setting the following at least to conform with GitHubsettings. There are also [various other configuration options](https://github.com/mojombo/jekyll/wiki/configuration) you might want to study.
 
 {% highlight yaml %}
 port: 4000
