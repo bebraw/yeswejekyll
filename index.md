@@ -175,9 +175,25 @@ Even though the site is not that large it still highlights some problems of Jeky
 
 In case you want to see how the site has evolved, study [the article on its history](http://koodilehto.fi/projects/koodilehto/) and the [source tree](https://github.com/koodilehto/koodilehto-site).
 
-## Limitations of Jekyll
+## Strengths and Weaknesses of Jekyll
 
-TBD
+For certain kind of projects a combination of Jekyll and GitHub Pages for hosting is just great. If you need interactivity you can likely add that using some JavaScript. Blogs, as discussed earlier, are a good fit for Jekyll. Same goes for simple sites such as Koodilehto we just briefly went through.
+
+### Jekyll vs. WordPress
+
+Compared to a full-fledged blogging platform such as [WordPress](http://wordpress.com/) there are certain nice advantages. This combination has a developer friendly Git driven workflow. In addition it is more secure by default as the possible attack surface is smaller. You certainly do not have to worry about updating your server. In this case we outsource this to the GitHub guys anyhow. It is also very easy to host a static site. You can literally put it anywhere with a minimal configuration.
+
+In certain respects WordPress may be the superior choice. It is definitely more friendly for a less technical user. And there is a huge community around it. You are bound to find many cool plugins to improve your WordPress experience. But, as I said, with great power comes great responsibility. That of security in this case.
+
+### Weaknesses
+
+The design of Jekyll starts to break apart in certain scenarios. As I mentioned earlier building complex information architecture can become quite hard. The markup schemes it supports are not adequate always.
+
+It is certainly nice that you may use Markdown for content and HTML for layouts for instance. The thing is sometimes you might want to attach some classifiers to your content. This type of work is common when you want to set up some hooks for your JavaScript code. The current architecture of Jekyll literally forces you to use HTML in this case.
+
+Plugins can alleviate this problem a little bit by allowing you to include Markdown in a HTML document. For some reason that is not possible by default. It is possible to to use HTML in Markdown documents but alas it is not allowed to use Markdown inside HTML again. This can be a real problem.
+
+I know these must be just some corner cases I have been running into. That said if you want to do something more complex than a simple site or blog, do consider alternatives or Jekyll bolstered with a collection of plugins.
 
 ## From Meek to Neat with Foundation
 
@@ -190,6 +206,10 @@ TBD
 ### Syntax Highlighting with Pygments
 
 Markdown, [pygments tag](http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll)
+
+TBD
+
+### Setting Up Analytics
 
 TBD
 
