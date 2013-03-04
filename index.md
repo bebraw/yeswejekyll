@@ -206,8 +206,8 @@ As it is easier to copy and paste than come up with some original, pick some [pr
 Once you have finished the arduous operation tap yourself on back for me. There you go! Before moving on remember to include that {{ "{{ content " }}}} tag to the page somewhere. One more thing. Remember to add the following at your `head` (not the real one preferably):
 
 {% highlight html %}
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/foundation.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/foundation.css">
 {% endhighlight %}
 
 That `normalize` bit is there to eliminate certain browser differences. By default they tend to have the weirdest settings in place so it is better to get rid of those once and for all. Let us all be normal, right? The latter line should be obvious by now. There is also a minified version available. It has been named aptly as `foundation.min.css`. How come the name is longer then? I guess I will never know.
