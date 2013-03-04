@@ -1,8 +1,6 @@
 ---
 layout: default
 title: About
-css: index
-js: index
 ---
 
 # About
@@ -197,7 +195,24 @@ I know these must be just some corner cases I have been running into. That said 
 
 ## From Meek to Neat with Foundation
 
-TBD. Go through basics of Foundation.
+[Zurb Foundation](http://foundation.zurb.com/) is an alternative to the hugely popular [Twitter Bootstrap](http://twitter.github.com/bootstrap/). Since I always like to bet on the underdog I am going to show you how to integrate Foundation to your project and make sure it has been built on a strong foundation (ehehe).
+
+Download the vanilla version of Foundation from their site and unzip it somewhere. You should find two folders, css and js, inside it. Copy those to your project.
+
+> If you are feeling frisky, try and open that `index.html` included in the Foundation package. You should be able to see some very basic demos there and get an idea of what sort of markup it uses.
+
+As it is easier to copy and paste than come up with some original, pick some [premade layout](http://foundation.zurb.com/templates.php). I kind of like the look of the Blog one so I will pick that. You go and pick whatever you like.
+
+Once you have finished the arduous operation tap yourself on back for me. There you go! Before moving on remember to include that {{ "{{ content " }}}} tag to the page somewhere. One more thing. Remember to add the following at your `head` (not the real one preferably):
+
+{% highlight html %}
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/foundation.css">
+{% endhighlight %}
+
+That `normalize` bit is there to eliminate certain browser differences. By default they tend to have the weirdest settings in place so it is better to get rid of those once and for all. Let us all be normal, right? The latter line should be obvious by now. There is also a minified version available. It has been named aptly as `foundation.min.css`. How come the name is longer then? I guess I will never know.
+
+It is quite possible your site still needs a little bit of tweaking. After all you do not want to end up suffering from the Bootstrap syndrome although that should be technically impossible given we are using Foundation here. Your next obvious step lies within [Foundation Documentation](http://foundation.zurb.com/docs/).
 
 ## Advanced Tricks
 

@@ -12,6 +12,8 @@
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/foundation.css">
         <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
 
         {% if page.css %}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" media="screen, projection" />{% endif %}
@@ -22,7 +24,54 @@
         <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
     </head>
     <body>
-    {{ content }}
+<!-- Nav Bar -->
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Yes We Jekyll <small>Believe it or not!</small></h1>
+      <hr />
+    </div>
+  </div>
+  <!-- End Nav -->
+
+  <!-- Main Page Content and Sidebar -->
+  <div class="row">
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+        <article>{{ content }}</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+      <div class="panel">
+        <h5>Featured</h5>
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+        <a href="#">Read More &rarr;</a>
+      </div>
+    </aside>
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+  <!-- Footer -->
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="http://www.nixtu.info">Good stuff</a></li>
+            <li><a href="http://www.github.com/bebraw">More good stuff</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     {% if page.js %}<script data-main="/js/{{ page.js }}" src="/js/require-jquery.js"></script>{% endif %}
 
