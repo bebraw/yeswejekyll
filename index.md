@@ -53,7 +53,23 @@ In addition it is a good idea to define a `.gitignore` that contains that `_site
 
 ### _config.yml
 
-TBD
+`_config.yml` contains site-wide configuration. It may also be used to define some defaults which Jekyll uses during generation. I recommend setting the following at least to conform with GitHubsettings:
+
+{% highlight yaml %}
+port: 4000
+auto: true
+safe: true
+server: true
+pygments: true
+{% endhighlight %}
+
+This setup makes the default `jekyll` command run a development server that generates the website as you alter files. In practice this is very useful. You might want to tweak the server `port` and `pygments` flag based on your needs.
+
+> I highly recommend setting up [LiveReload](http://livereload.com/) or a similar tool in order to eliminate the need to refresh the browser manual during development. I will get back to this when discussing advanced tricks. TODO: anchor
+
+[Pygments](http://pygments.org/) is a very popular highlighting generator. You simply just need to use the `highlight` tag within your source. I will get into this back later when I discuss syntax. TODO: anchor
+
+One interesting property of `_config` is the fact that you may refer to its items within templates. I will get back implications of this later at... TODO: anchor
 
 ### _includes
 
@@ -71,6 +87,40 @@ TBD
 
 TBD
 
+### index.html
+
+TBD
+
 ## Understanding YAML Front Matter
 
 TBD
+
+## Understanding Templating
+
+TODO: site-wide configuration
+
+Markdown, [pygments tag](http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll)
+
+## Advanced Tricks
+
+TBD
+
+## Styling
+
+TBD. Go through basics of Foundation.
+
+### Setting Up Grunt
+
+TBD
+
+### Setting Up Twitter Feeds
+
+TBD
+
+### Setting Up Commenting
+
+TBD
+
+### Setting Up RSS
+
+## Conclusion
