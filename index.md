@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: About
 css: index
 js: index
@@ -26,7 +26,9 @@ Unfortunately Jekyll does not come with an easy way to initialize project. Fortu
 {% highlight bash %}
 $ git clone https://github.com/plusjade/jekyll-bootstrap.git <target>
 $ cd <target>
-<go and create your GitHub repo now or set up one using hub>
+
+go and create your GitHub repo now or set up one using hub
+
 $ git remote add origin <repo address>
 $ git push origin master
 {% endhighlight %}
@@ -69,7 +71,17 @@ This setup makes the default `jekyll` command run a development server that gene
 
 [Pygments](http://pygments.org/) is a very popular highlighting generator. You simply just need to use the `highlight` tag within your source. I will get into this back later when I discuss syntax. TODO: anchor
 
-One interesting property of `_config` is the fact that you may refer to its items within templates. You can refer to these items using `{{ "{{ site.property " }}}}` kind of syntax. I will get back implications of this later at... TODO: anchor
+One interesting property of `_config` is the fact that you may refer to its items within templates. You can refer to these items using `{{ "{{ site.property " }}}}` kind of syntax. I will get back to this in the next section.
+
+### \_layouts
+
+As you might guess from the name `_layouts` contains the layout files of the project. These layouts form the literal backbone of your project. You will usually define at least some sort of a default template and perhaps a couple of auxiliary ones depending on your purposes.
+
+If you are feeling particularly lazy and unimaginative, just pick [HTML5 Boilerplate](http://html5boilerplate.com/) and build your default layout based on that. You will need to remember to do one very important thing, however. Include a `{{ "{{ content " }}}}` tag where you want actual page content to be injected.
+
+As mentioned in the previous section you may use `{{ "{{ site.property " }}}}` kind of syntax to refer to global properties defined at `_config.yml`. The same syntax may also be used to refer to page specific properties defined at YAML Front Matter (TODO: anchor). In this case you will simply use the following syntax: `{{ "{{ page.property " }}}}`
+
+In case you are curious about what more can you do, explore the documentation of [Liquid](http://liquidmarkup.org/), the templating engine used here. Jekyll also provides [various extensions](https://github.com/mojombo/jekyll/wiki/Liquid-Extensions) which allow you to perform various operations. In fact we will cover one of these next.
 
 ### \_includes
 
@@ -81,19 +93,22 @@ As you might have noticed I decided to use `md` extension in my include. This si
 
 Besides HTML and Markdown also [Textile](http://redcloth.org/textile) is supported. I tend to favor Markdown due to the fact that it is used commonly on GitHub and Stack Overflow. And the syntax is quite nice once you get used to it.
 
-### \_layouts
-
-As you might guess from the name `_layouts` contains the layout files of the project. These layouts form the literal backbone of your project. You will usually define at least some sort of a default template and perhaps a couple of auxiliary ones depending on your purposes.
-
-If you are feeling particularly lazy and unimaginative, just pick [HTML5 Boilerplate](http://html5boilerplate.com/) and build your default layout based on that. You will need to remember to do one very important thing, however. Include a `{{ "{{ content " }}}}` tag where you want actual page content to be injected.
-
 ### index.html
 
-TBD
+As I mentioned earlier Jekyll infers the format used based on extension. So rather than having an `index.html` it is entirely possible to write the index in say Markdown.
 
-### Understanding YAML Front Matter
+Regardless of your choice there is one thing you absolutely must do. You have to define something known as [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter). This matters a lot you know!
 
-TBD
+In case of this particular page it looks like this:
+
+{% highlight yaml %}
+---
+layout: default
+title: About
+css: index
+js: index
+---
+{% endhighlight %}
 
 ### \_posts
 
