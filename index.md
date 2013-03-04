@@ -116,6 +116,8 @@ It is very easy to achieve this using an `if` tag like this:
 
     {{ "{% if page.css " }}%}<link rel="stylesheet" href="/css/{{ "{{ page.css " }}}}.css" type="text/css" />{{ "{% endif " }}%}
 
+Sometimes you may want to create a hierarchical site (ie. /foobar). Traditionally links such as this are created with proper directory structure and index.html files. Fortunately Jekyll provides as a handy shortcut we may use. In this case we should just create foobar.html at the project root and make its `permalink` property point at `foobar/` (permalink: foobar/).
+
 ### \_posts
 
 Jekyll provides some utilities that make it easier to maintain a blog with it. `_posts`, as you might guess, will contain your blog posts should you want to write some. It uses a specific kind of naming scheme. Rather than making these files by hand I recommend using [jekyll-bootstrap Rakefile](https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile) instead. Just copy that to the root of your project and investigate it.
@@ -156,6 +158,8 @@ And if you just want to blog and rather not care about the technical details, lo
 ### \_site
 
 This directory contains Jekyll output. Usually you will want to exclude this directory from your revision control. In case of Git just include it at your [.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html).
+
+In case you want to understand better how Jekyll works investigate the output with care.
 
 ## Understanding Templating
 
