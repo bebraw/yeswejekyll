@@ -155,7 +155,7 @@ And if you just want to blog and rather not care about the technical details, lo
 
 ### \_site
 
-TBD
+This directory contains Jekyll output. Usually you will want to exclude this directory from your revision control. In case of Git just include it at your [.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html).
 
 ## Understanding Templating
 
