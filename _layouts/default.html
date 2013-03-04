@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/github.css">
-        <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="css/base.css">
 
         {% if page.css %}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" media="screen, projection" />{% endif %}
 
@@ -28,17 +28,17 @@
 
 <a href="https://github.com/bebraw/yeswejekyll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <!-- Nav Bar -->
-  <div class="row">
+  <!-- Nav Bar -->
+  <header class="row">
     <div class="large-12 columns">
       <h1>Yes We Jekyll <small>Change we can believe in!</small></h1>
       <hr />
     </div>
-  </div>
+  </header>
   <!-- End Nav -->
 
   <!-- Main Page Content and Sidebar -->
-  <div class="row">
+  <div class="main row">
     <!-- Main Blog Content -->
     <div class="large-9 columns" role="content">
         <article>{{ content }}</article>
@@ -61,11 +61,9 @@
   <!-- Footer -->
   <footer class="row">
     <div class="large-12 columns">
-      <hr />
       <div class="row">
         <div class="large-6 columns">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
-            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.</p>
+            <a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">

@@ -1,3 +1,31 @@
 .highlight, pre {
     margin-bottom: 1em;
 }
+
+body {
+    background: #333;
+}
+a {
+    color: rgb(89, 172, 0);
+}
+
+header {
+    background: #bbb;
+}
+
+.main {
+    background: #ebebeb;
+}
+
+footer {
+    background: #646464;
+
+    padding-top: 1em;
+}
+footer a {
+    color: rgb(183, 247, 114);
+}
+
+.license {
+    border-width: 0;
+}
