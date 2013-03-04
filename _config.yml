@@ -3,6 +3,6 @@ auto: true
 safe: true
 server: true
 pygments: true
-ga: 'TODO'
+ga: 'UA-5272959-6'
 title: 'Yes We Jekyll'
 description: 'Yes We Jekyll helps you to understand how to build sites using Jekyll, a static website generator. In addition GitHub Pages integration is covered.'
