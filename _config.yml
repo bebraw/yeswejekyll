@@ -4,5 +4,5 @@ safe: true
 server: true
 pygments: true
 ga: 'TODO'
-name: 'Yes We Jekyll'
+title: 'Yes We Jekyll'
 description: 'Yes We Jekyll helps you to understand how to build sites using Jekyll, a static website generator. In addition GitHub Pages integration is covered.'
