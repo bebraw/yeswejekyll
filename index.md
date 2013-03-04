@@ -110,6 +110,12 @@ js: index
 ---
 {% endhighlight %}
 
+As discussed earlier it is possible to refer to these properties at layout defined here. In this case I inject there information about page title and custom CSS and JavaScript files used. This is more of my own convention. In case either `css` or `js` is not provided I simply will not render the script reference in my layout.
+
+It is very easy to achieve this using an `if` tag like this: 
+
+    {{ "{% if page.css " }}%}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" />{{ "{% endif " }}%}
+
 ### \_posts
 
 TBD
