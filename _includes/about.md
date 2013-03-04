@@ -1,4 +1,4 @@
-As you probably well know even Mr. Obama used [Jekyll](https://github.com/mojombo/jekyll) during [his campaign](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/). Jekyll is a static website generator developed in Ruby. There are actually solutions implemented in other languages, such as [Node.js](http://nodejs.org/) based [Enfield](https://github.com/fortes/enfield), that aim to be compatible with it. 
+As you probably well know even Mr. Obama used [Jekyll](https://github.com/mojombo/jekyll) during [his campaign](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/). Jekyll is a static website generator developed in Ruby. There are actually solutions implemented in other languages, such as [Node.js](http://nodejs.org/) based [Enfield](https://github.com/fortes/enfield), that aim to be compatible with it.
 
 > In any case it is probably a good idea to go and [install Jekyll](https://github.com/mojombo/jekyll/wiki/install) now unless you already haven't and get back right after that. Or you just might want to read on. Whatever.
 
