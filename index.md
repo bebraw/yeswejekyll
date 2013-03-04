@@ -161,7 +161,7 @@ In case you want to understand better how Jekyll works investigate the output wi
 
 ## Case Study - Koodilehto Site
 
-TBD: include image
+<img class="right" src="images/koodilehto.png" alt="Koodilehto site"/>
 
 [Koodilehto](http://koodilehto.fi/) is an IT co-operative located in Jyväskylä. It is a site I built primarily myself although others contributed some bits and pieces and of course valuable feedback. Further feedback was gained through [criticue](http://criticue.com/) and [Feedback Roulette](http://feedbackroulette.com/). This helped to refine the visual look of the site further.
 
