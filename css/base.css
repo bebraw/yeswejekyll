@@ -4,6 +4,7 @@
 
 body {
     background: #333;
+    background-image: url('images/dark_Tire.png');
 }
 a {
     color: rgb(89, 172, 0);
@@ -11,14 +12,17 @@ a {
 
 header {
     background: #bbb;
+    background-image: url('images/gplaypattern.png');
 }
 
 .main {
     background: #ebebeb;
+    background-image: url('images/farmer.png');
 }
 
 footer {
     background: #646464;
+    background-image: url('images/low_contrast_linen.png');
 
     padding-top: 1em;
 }
