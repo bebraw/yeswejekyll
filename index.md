@@ -163,6 +163,20 @@ In case you want to understand better how Jekyll works investigate the output wi
 
 ## Case Study - Koodilehto Site
 
+TBD: include image
+
+[Koodilehto](http://koodilehto.fi/) is an IT co-operative located in Jyväskylä. It is a site I built primarily myself although others contributed some bits and pieces and of course valuable feedback. Further feedback was gained through [criticue](http://criticue.com/) and [Feedback Roulette](http://feedbackroulette.com/). This helped to refine the visual look of the site further.
+
+Besides Jekyll the site uses [Bootstrap](http://twitter.github.com/bootstrap/) for styling and some bits of JavaScript for certain more interactive portions of the site. These include RSS and Twitter widgets and the display logic at the "professionals" page.
+
+[RequireJS](http://requirejs.org/) is used for managing the JavaScript. At the moment no optimized build is used although that would likely be a nice optimization. The site seems quite fast enough even without this.
+
+Even though the site is not that large it still highlights some problems of Jekyll you should be aware of. For instance building the navigation tree was not entirely trivial and took some nasty conditional logic. I believe it is possible to work around this issue by using some suitable plugin, though. In that case you cannot use GitHub hosting "as is".
+
+In case you want to see how the site has evolved, study [the article on its history](http://koodilehto.fi/projects/koodilehto/) and the [source tree](https://github.com/koodilehto/koodilehto-site).
+
+## Limitations of Jekyll
+
 TBD
 
 ## From Meek to Neat with Foundation
