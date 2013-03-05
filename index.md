@@ -213,7 +213,11 @@ Plugins can alleviate this problem a little bit by allowing you to include Markd
 
 I know these must be just some corner cases I have been running into. That said if you want to do something more complex than a simple site or blog, do consider alternatives or Jekyll bolstered with a collection of plugins.
 
-## From Meek to Neat with Foundation
+## From Meek to Neat
+
+If you have followed this document so far you have likely gotten something together. It is likely pretty ugly but functional. Now it is time to turn your site into a masterpiece or at least less of a mess.
+
+### Developing Foundation
 
 [Zurb Foundation](http://foundation.zurb.com/) is an alternative to the hugely popular [Twitter Bootstrap](http://twitter.github.com/bootstrap/). Since I always like to bet on the underdog I am going to show you how to integrate Foundation to your project and make sure it has been built on a strong foundation (ehehe).
 
@@ -233,6 +237,20 @@ Once you have finished the arduous operation tap yourself on back for me. There 
 That `normalize` bit is there to eliminate certain browser differences. By default they tend to have the weirdest settings in place so it is better to get rid of those once and for all. Let us all be normal, right? The latter line should be obvious by now. There is also a minified version available. It has been named aptly as `foundation.min.css`. How come the name is longer then? I guess I will never know.
 
 It is quite possible your site still needs a little bit of tweaking. After all you do not want to end up suffering from the Bootstrap syndrome although that should be technically impossible given we are using Foundation here. Your next obvious step lies within [Foundation Documentation](http://foundation.zurb.com/docs/).
+
+### Picking a Color Scheme
+
+Color design is one of those tricky parts. Given I am a boring person I decided to to grayscale scheme and then build some textures on top of that. You might want to use a tool such as [Color Scheme Designer](http://colorschemedesigner.com/) to figure out what kind of a scheme you want to use. You will likely find [HTML_CodeSniffer](http://squizlabs.github.com/HTML_CodeSniffer/) useful for checking contrast ratios.
+
+There are various [other tools](http://webdesignledger.com/tools/10-super-useful-tools-for-choosing-the-right-color-palette) available as well. I personally do not use these tools a lot but rather just fiddle around with Chrome Inspector till it looks acceptable enough. I try to avoid too bright colors and think in terms of visual hierarchy. Colors can help you to define what is important and what is not. This way they guide the way the users perceive the site and ultimately use it.
+
+If you cannot find anything that works particularly well, just stick to tried and true white (perhaps toned down a bit) and some darker color(s) to complement it. Generally it is a good idea to avoid absolutes and break them down a bit. So rather than having #000 (black) try #111 or #222 to see what kind of difference it makes visually. It is not much but it is still something and one of those things that sets your design apart. Once you have enough of these little things right it starts to count.
+
+As large areas of pure color may look a bit distracting, although this is more of a matter of taste, I tend to use some subtle textures to get rid of this problem. It is very helpful to decide upon a color scheme before moving onto texturing, though. The colors work as a basis for your design and the textures give it some oomph it needs.
+
+### Picking Subtle Textures
+
+TBD
 
 ## Advanced Tricks
 
