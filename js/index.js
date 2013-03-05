@@ -18,12 +18,12 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll'], function($) {
         var $toc = $('.toc');
         var delay = 200;
 
-        initializeTOC($toc);
+        initializeTOC($toc, 500);
 
         $($toc).localScroll({duration: delay});
     });
 
-    function initializeTOC($parent) {
+    function initializeTOC($parent, delay) {
         var $headers = $(':header').map(function() {
             var $e = $(this);
             var text = $e.text();
@@ -49,6 +49,22 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll'], function($) {
 
             prevDepth = v.depth;
         });
+
+        initializeAnimation();
+
+        function initializeAnimation() {
+            fadeOut();
+
+            $parent.on('mouseenter', fadeIn).on('mouseleave', fadeOut);
+        }
+
+        function fadeIn() {
+            $parent.stop(true).delay(delay).animate({opacity: 1.0});
+        }
+
+        function fadeOut() {
+            $parent.stop(true).delay(delay).animate({opacity: 0.4});
+        }
 
         function $ul() {
             return $('<ul>');
