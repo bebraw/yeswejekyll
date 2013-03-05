@@ -18,10 +18,40 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll'], function($) {
         var $toc = $('.toc');
         var delay = 200;
 
+        initializePatternToggle($('.togglePatterns'));
         initializeTOC($toc, 500);
 
         $($toc).localScroll({duration: delay});
     });
+
+    function initializePatternToggle($e) {
+        var texEnabled = true;
+        var bgImages = $('*').map(function() {
+            var $e = $(this);
+
+            return {
+                $e: $e,
+                bg: $e.css('background-image')
+            };
+        });
+
+        $e.on('click', function(e) {
+            e.preventDefault();
+
+            texEnabled = !texEnabled;
+
+            if(texEnabled) {
+                bgImages.each(function(i, v) {
+                    v.$e.css('background-image', v.bg);
+                });
+            }
+            else {
+                bgImages.each(function(i, v) {
+                    v.$e.css('background-image', 'none');
+                });
+            }
+        });
+    }
 
     function initializeTOC($parent, delay) {
         var $headers = $(':header').map(function() {

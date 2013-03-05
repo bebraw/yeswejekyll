@@ -250,7 +250,13 @@ As large areas of pure color may look a bit distracting, although this is more o
 
 ### Picking Subtle Textures
 
-TBD
+I guess this is one of those things that kind of divide people. Some like to use more grungy textures. Generally I try to stick with something very subtle. I am certain you can achieve a good design in many ways. In this case I will show you how to complement your design with [Subtle Patterns](http://subtlepatterns.com/).
+
+`Subtle Patterns` is a collection of, well, subtle patterns. In effect these are very light yet still noticeable textures that are tileable. This makes them excellent for background usage.
+
+Given I am a Chrome guy I like to use [Subtle Patterns Chrome Extension](https://github.com/overra/Subtle-Patterns-Chrome-Extension) for trying out the textures. This provides a nice and fun way to browse through their selection. After that you just need to extract the URL using Inspector, download the image and attach it to your project.
+
+In case you want to see what difference it makes, <a href="#" class="togglePatterns">you can toggle patterns on this page</a>.
 
 ## Advanced Tricks
 
