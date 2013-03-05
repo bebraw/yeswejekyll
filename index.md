@@ -5,6 +5,11 @@ js: index
 
 ## About
 
+<div class="right picture">
+    <img src="images/jekyll.jpg" alt="Mr. Jekyll"/>
+    <p class="caption">Mr. Jekyll by <a href="http://www.flickr.com/photos/95492938@N00/3568446372/">Kaptain Kobold</a><br/> (CC BY-NC-SA)</p>
+</div>
+
 {% include about.md %}
 
 ## License

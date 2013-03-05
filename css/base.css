@@ -30,6 +30,10 @@ footer a {
     color: rgb(183, 247, 114);
 }
 
+.picture {
+    margin: 1em;
+}
+
 .license {
     border-width: 0;
 }
