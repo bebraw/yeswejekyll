@@ -6,13 +6,12 @@ require.config({
         localscroll: 'jquery.localscroll.min'
     },
     shim: {
-        magellan: ['foundation'],
         scrollto: ['jquery'],
         localscroll: ['scrollto']
     }
 });
 
-require(['jquery', 'foundation', 'magellan', 'scrollto', 'localscroll'], function($) {
+require(['jquery', 'foundation', 'scrollto', 'localscroll'], function($) {
     $(document).foundation();
 
     $(function() {
@@ -56,7 +55,7 @@ require(['jquery', 'foundation', 'magellan', 'scrollto', 'localscroll'], functio
         }
 
         function $li(val, id) {
-            var $e = $('<li>').attr('data-magellan-arrival', id);
+            var $e = $('<li>');
             $('<a>', {href: '#' + id}).text(val).appendTo($e);
 
             return $e;

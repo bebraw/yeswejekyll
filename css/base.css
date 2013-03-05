@@ -34,13 +34,11 @@ footer a {
     border-width: 0;
 }
 
-[data-magellan-expedition] {
+.toc {
     background: #eee;
 
-    min-width: 0%;
-}
+    position: fixed;
 
-.toc {
     padding-left: 1em;
     padding-right: 1em;
 }
