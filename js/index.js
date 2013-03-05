@@ -1,9 +1,9 @@
 require.config({
     paths: {
-        foundation: './foundation/foundation',
-        magellan: './foundation/foundation.magellan',
-        scrollto: './jquery.scrollto.min',
-        localscroll: './jquery.localscroll.min'
+        foundation: 'foundation/foundation',
+        magellan: 'foundation/foundation.magellan',
+        scrollto: 'jquery.scrollto.min',
+        localscroll: 'jquery.localscroll.min'
     },
     shim: {
         magellan: ['foundation'],
