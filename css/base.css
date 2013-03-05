@@ -33,3 +33,7 @@ footer a {
 .license {
     border-width: 0;
 }
+
+[data-magellan-expedition] {
+    min-width: 0%;
+}
