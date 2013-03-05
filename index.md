@@ -1,5 +1,6 @@
 ---
 layout: default
+js: index
 ---
 
 # About

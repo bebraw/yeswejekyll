@@ -46,15 +46,15 @@
 
     <!-- Sidebar -->
     <aside class="large-3 columns">
-      <div class="panel">
-        <h5>Featured</h5>
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-        <a href="#">Read More &rarr;</a>
+      <div data-magellan-expedition="fixed">
+        <ul class="sub-nav">
+          <li data-magellan-arrival="build"><a href="#build">Build with HTML</a></li>
+          <li data-magellan-arrival="js"><a href="#js">Arrival 2</a></li>
+        </ul>
       </div>
     </aside>
     <!-- End Sidebar -->
   </div>
-
   <!-- End Main Content and Sidebar -->
 
   <!-- Footer -->
@@ -77,9 +77,9 @@
     </div>
   </footer>
 
-    {% if page.js %}<script data-main="/js/{{ page.js }}" src="/js/require-jquery.js"></script>{% endif %}
+  {% if page.js %}<script data-main="js/{{ page.js }}" src="js/require-jquery.js"></script>{% endif %}
 
-        <script type="text/javascript">
+    <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', '{{ site.ga }}']);
         _gaq.push(['_trackPageview']);
@@ -89,6 +89,6 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-        </script>
-    </body>
+    </script>
+  </body>
 </html>
