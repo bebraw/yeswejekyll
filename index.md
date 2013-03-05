@@ -3,7 +3,7 @@ layout: default
 js: index
 ---
 
-# About
+## About
 
 {% include about.md %}
 
