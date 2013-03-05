@@ -286,13 +286,13 @@ In case you want to know more about [Google Web Fonts](http://www.google.com/web
 
 ## Advanced Tricks
 
-TBD
+I have tried to gather assorted tricks in this section. By now you should be comfortable in creating very basic sites with Jekyll. It is entirely possible I missed something obvious. If so, just poke me at the [issue tracker](https://github.com/bebraw/yeswejekyll) and I will look into it.
 
 ### Syntax Highlighting with Pygments
 
-Markdown, [pygments tag](http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll)
+One of the coolest features of Jekyll for me is the fact that it supports [Pygments](http://pygments.org/). It is a Python based code highlighter. I have used it in this little guide even. You will need to complement its output using some [pygments-css](https://github.com/richleland/pygments-css). In this case I have stuck with `github.css` as it seems to fit the overall theme and it is hard to go wrong with that.
 
-TBD
+The basic syntax of it is very simple. You simply use {{ "{% highlight language " }}%} and {{ "{% endhighlight " }}%} tags and stash the content to be highlighted between those two. You may even enable line numbers like this: {{ "{% highlight language linenum " }}%}.
 
 ### Setting Up Analytics
 
