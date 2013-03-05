@@ -256,7 +256,7 @@ I guess this is one of those things that kind of divide people. Some like to use
 
 Given I am a Chrome guy I like to use [Subtle Patterns Chrome Extension](https://github.com/overra/Subtle-Patterns-Chrome-Extension) for trying out the textures. This provides a nice and fun way to browse through their selection. After that you just need to extract the URL using Inspector, download the image and attach it to your project.
 
-In case you want to see what difference it makes, <a href="#" class="togglePatterns">you can toggle patterns on this page</a>.
+> In case you want to see what difference it makes, <a href="#" class="togglePatterns">you can toggle patterns on this page</a>.
 
 ### Picking Photos and Imagery
 
@@ -280,7 +280,9 @@ As I am not much of a font expert and can just about separate 'serif' from 'sans
 
 If you know what you are doing using more than two is probably alright. If you still do not know the difference between a `font` and a `typeface` I would not bother. And if you do not know what `kerning` is, well, there is [a game for that](http://type.method.ac/).
 
+> To make finding the right fonts easier there is a nice [Chrome extension](https://chrome.google.com/webstore/detail/google-font-previewer-for/engndlnldodigdjamndkplafgmkkencc?hl=en) for that. Consider using it.
 
+In case you want to know more about [Google Web Fonts](http://www.google.com/webfonts) I suggest checking out their [tutorial](https://developers.google.com/webfonts/docs/getting_started) on the subject. If there is one thing I really must make clear it is the fact that you absolutely must set `font-weight` property to make the output look the same across browsers. Miss that and you might end up with something weird in some other browser rather than the one you are currently using.
 
 ## Advanced Tricks
 
