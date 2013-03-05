@@ -296,7 +296,9 @@ The basic syntax of it is very simple. You simply use {{ "{% highlight language 
 
 ### Setting Up Analytics
 
-TBD
+Getting [Google Analytics](http://www.google.com/analytics/) to work on your project is fairly simple. You just need to include their snippet on your default template and off you go. I have instrumented it that way in this project that you just have to set their identifier at `_config.yml` to get it to work.
+
+So in case you are using this project as your template, do that and you have got analytics on your site.
 
 ### Setting Up Grunt
 
