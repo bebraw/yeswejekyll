@@ -1,8 +1,27 @@
-require(['jquery', './foundation/foundation', './foundation/foundation.magellan'], function($) {
+require.config({
+    paths: {
+        foundation: './foundation/foundation',
+        magellan: './foundation/foundation.magellan',
+        scrollto: './jquery.scrollto.min',
+        localscroll: './jquery.localscroll.min'
+    },
+    shim: {
+        magellan: ['foundation'],
+        scrollto: ['jquery'],
+        localscroll: ['scrollto']
+    }
+});
+
+require(['jquery', 'foundation', 'magellan', 'scrollto', 'localscroll'], function($) {
     $(document).foundation();
 
     $(function() {
-        initializeTOC($('.toc'));
+        var $toc = $('.toc');
+        var delay = 200;
+
+        initializeTOC($toc);
+
+        $($toc).localScroll({duration: delay});
     });
 
     function initializeTOC($parent) {
