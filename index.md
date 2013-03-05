@@ -274,6 +274,14 @@ If there is one more thing you can do, it is to work on that subtle layer I have
 
 You could also experiment with various border styles. Sometimes all it takes is one border at a right place to make a design more interesting.
 
+### Picking Fonts
+
+As I am not much of a font expert and can just about separate 'serif' from 'sans-serif' and I know those two have nothing to do with sheriffs I usually stick to just two fonts on my design. The other will be used for headers while the other is used for the rest of the site. In this case [pairing the fonts](http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/) is essential. To get a better idea check out these [existing combos](http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/).
+
+If you know what you are doing using more than two is probably alright. If you still do not know the difference between a `font` and a `typeface` I would not bother. And if you do not know what `kerning` is, well, there is [a game for that](http://type.method.ac/).
+
+
+
 ## Advanced Tricks
 
 TBD
