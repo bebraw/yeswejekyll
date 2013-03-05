@@ -302,7 +302,7 @@ So in case you are using this project as your template, do that and you have got
 
 ### Setting Up Grunt
 
-TBD
+sudo npm install -g grunt-cli
 
 ### Setting Up Twitter Feeds
 

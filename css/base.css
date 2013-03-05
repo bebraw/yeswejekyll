@@ -55,6 +55,10 @@ footer a {
 .toc {
     background: #eee;
 
+    overflow: auto;
+
+    height: 50%;
+
     position: fixed;
 
     padding-left: 1em;
