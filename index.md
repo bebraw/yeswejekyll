@@ -18,6 +18,11 @@ js: index
 
 ## Getting Started
 
+<div class="right picture">
+    <img src="images/hyde.jpg" alt="Mr. Hyde"/>
+    <p class="caption">Mr. Hyde by <a href="http://www.flickr.com/photos/46952347@N00/919710334/">Luis Carlos Araujo</a><br/> (CC BY-NC-ND)</p>
+</div>
+
 It is actually very easy to get started with Jekyll once you have managed to install it initially. Pretty much all you need to do is to invoke command `jekyll` and it will generate a `_site` directory for you.
 
 > I will assume that you understand the basics of [Git](http://gitscm.org/) and terminal. In case you do not, I recommend learning very basics at least. Or you can just learn the tools as you go. It is up to you.
