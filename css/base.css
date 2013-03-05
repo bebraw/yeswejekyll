@@ -35,5 +35,15 @@ footer a {
 }
 
 [data-magellan-expedition] {
+    background: #eee;
+
     min-width: 0%;
+}
+
+.toc {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.toc, .toc ul {
+    list-style-type: none;
 }
