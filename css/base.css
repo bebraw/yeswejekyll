@@ -49,6 +49,8 @@ footer a {
 
     padding-left: 1em;
     padding-right: 1em;
+
+    border-radius: 0.2em;
 }
 .toc, .toc ul {
     list-style-type: none;

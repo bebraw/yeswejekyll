@@ -258,7 +258,7 @@ Given I am a Chrome guy I like to use [Subtle Patterns Chrome Extension](https:/
 
 In case you want to see what difference it makes, <a href="#" class="togglePatterns">you can toggle patterns on this page</a>.
 
-## Picking Photos and Imagery
+### Picking Photos and Imagery
 
 Another thing that can make a difference is the usage of stock footage. If you are just fooling around, you might want to try something like [lorempixel](http://lorempixel.com/) or [placekitten](http://placekitten.com/). Those give you a nice little syntax you may use to generate images on your site. This is particularly useful in the prototyping phase.
 
@@ -267,6 +267,12 @@ Once things start to get more serious you will likely want to move onto somethin
 All you need to do is to make sure it is set to `Creative Commons` and attribute properly. Sometimes the licensing might constrain commercial usage so keep that in mind when looking for photos. There are times when you will come by a cool photos that have been licensed this way. It may very well be able to negotiate some kind of a licensing deal with the author. Sometimes they will just give you the permission for extra visibility.
 
 Of course in ideal case you have some imagery of your own available or you happen to know some photographer. There is a lot of footage out there if you just know where to look for it.
+
+### Adding Subtle Details
+
+If there is one more thing you can do, it is to work on that subtle layer I have been rambling about. You could for instance add a hint of [rounded corners](http://www.css3.info/preview/rounded-border/) in certain places. Or you could try to add a bit of [box shadow](http://css3gen.com/box-shadow/) in some suitable place.
+
+You could also experiment with various border styles. Sometimes all it takes is one border at a right place to make a design more interesting.
 
 ## Advanced Tricks
 
