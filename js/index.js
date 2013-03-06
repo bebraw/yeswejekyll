@@ -15,13 +15,12 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
     $(document).foundation();
 
     $(function() {
-        var $toc = $('.toc');
         var delay = 200;
 
         initializePatternToggle($('.togglePatterns'));
-        initializeTOC($toc, 500);
+        initializeTOC($('.toc'), 500);
 
-        $($toc).localScroll({duration: delay});
+        $('.toc, :header').localScroll({duration: delay});
     });
 
     function initializePatternToggle($e) {
@@ -58,11 +57,14 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
             var $e = $(this);
             var text = $e.text();
             var id = idfy(text);
+            var $a = $('<a>', {'class': 'anchor', href: '#' + id}).html('&para;').appendTo($e);
+
+            initializeAnimation($a);
 
             $e.attr('name', id);
 
             return {
-                text: $e.text(),
+                text: text,
                 id: id,
                 depth: parseInt($e.prop('tagName').slice(1), 10)
             };
@@ -80,22 +82,26 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
             prevDepth = v.depth;
         });
 
-        if(!Modernizr.touch) {
-            initializeAnimation();
+        initializeAnimation($parent);
+
+        function initializeAnimation($e) {
+            if(Modernizr.touch) return;
+
+            var maxVal = 1.0;
+            var minVal = 0.4;
+
+            $e.css('opacity', minVal);
+
+            $e.on('mouseenter', fadeIn.bind(undefined, $e, maxVal)).
+                on('mouseleave', fadeOut.bind(undefined, $e, minVal));
         }
 
-        function initializeAnimation() {
-            fadeOut();
-
-            $parent.on('mouseenter', fadeIn).on('mouseleave', fadeOut);
+        function fadeIn($e, val) {
+            $e.stop(true).delay(delay).animate({opacity: val});
         }
 
-        function fadeIn() {
-            $parent.stop(true).delay(delay).animate({opacity: 1.0});
-        }
-
-        function fadeOut() {
-            $parent.stop(true).delay(delay).animate({opacity: 0.4});
+        function fadeOut($e, val) {
+            $e.stop(true).delay(delay).animate({opacity: val});
         }
 
         function $ul() {

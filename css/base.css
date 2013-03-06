@@ -7,6 +7,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Andada', sans-serif;
     font-weight: 400;
 }
+.anchor {
+    margin-left: 0.3em;
+}
 
 .highlight, pre {
     margin-bottom: 1em;
