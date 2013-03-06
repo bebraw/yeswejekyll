@@ -120,7 +120,7 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
         }
 
         function idfy(val) {
-            return val.toLowerCase().replace(/[ \-]/g, '_');
+            return val.toLowerCase().replace(/[ \-]/g, '_').replace('.', '');
         }
 
         function last(arr) {
