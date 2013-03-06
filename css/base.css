@@ -53,20 +53,25 @@ footer a {
     border-width: 0;
 }
 
-.toc {
+.sidebar {
+    box-sizing: border-box;
     background: #eee;
-
-    overflow: auto;
-
-    height: 50%;
 
     position: fixed;
 
-    padding-left: 1em;
-    padding-right: 1em;
+    height: 50%;
+
+    overflow: auto;
+
+    padding: 1em;
 
     border-radius: 0.2em;
 }
-.toc, .toc ul {
+
+.sidebar ul {
     list-style-type: none;
+}
+
+.sidebar .toc {
+    margin: 0;
 }
