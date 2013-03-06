@@ -55,6 +55,10 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
     function initializeTOC($parent, delay) {
         var $headers = $(':header').map(function() {
             var $e = $(this);
+            var depth = parseInt($e.prop('tagName').slice(1), 10);
+
+            if(depth == 1) return;
+
             var text = $e.text();
             var id = idfy(text);
             var $a = $('<a>', {'class': 'anchor', href: '#' + id}).html('&para;').appendTo($e);
@@ -68,7 +72,7 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
                 id: id,
                 depth: parseInt($e.prop('tagName').slice(1), 10)
             };
-        }).slice(1);
+        });
         var prevDepth = $headers[0].depth;
         var $parents = [$parent];
         var $prev;
