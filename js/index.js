@@ -59,7 +59,7 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
             var text = $e.text();
             var id = idfy(text);
 
-            $e.attr('id', id);
+            $e.attr('name', id);
 
             return {
                 text: $e.text(),
@@ -110,18 +110,11 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
         }
 
         function idfy(val) {
-            return val.split(' ').join('');
+            return val.toLowerCase().replace(/[ \-]/g, '_');
         }
 
         function last(arr) {
             return arr[arr.length - 1];
         }
     }
-
-    // TODO: modernizr
-    // TODO: zepto (load conditionally)
-    // TODO: construct TOC
-    // TODO: smooth transitions
-
-    // TODO: twitter + rss
 });
