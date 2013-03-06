@@ -33,6 +33,7 @@ header {
 footer {
     background: #646464;
     background-image: url('../images/low_contrast_linen.png');
+    color: #ccc;
 
     padding-top: 1em;
 }
