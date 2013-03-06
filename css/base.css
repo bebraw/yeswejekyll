@@ -67,11 +67,12 @@ footer a {
 
     border-radius: 0.2em;
 }
-
 .sidebar ul {
     list-style-type: none;
 }
-
 .sidebar .toc {
     margin: 0;
+}
+.sidebar .social li {
+    display: inline;
 }
