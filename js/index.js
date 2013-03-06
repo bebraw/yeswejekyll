@@ -1,9 +1,9 @@
 require.config({
     paths: {
         foundation: 'foundation/foundation',
-        magellan: 'foundation/foundation.magellan',
         scrollto: 'jquery.scrollto.min',
-        localscroll: 'jquery.localscroll.min'
+        localscroll: 'jquery.localscroll.min',
+        modernizr: 'vendor/custom.modernizr'
     },
     shim: {
         scrollto: ['jquery'],
@@ -11,7 +11,7 @@ require.config({
     }
 });
 
-require(['jquery', 'foundation', 'scrollto', 'localscroll'], function($) {
+require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], function($) {
     $(document).foundation();
 
     $(function() {
@@ -80,7 +80,9 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll'], function($) {
             prevDepth = v.depth;
         });
 
-        initializeAnimation();
+        if(!Modernizr.touch) {
+            initializeAnimation();
+        }
 
         function initializeAnimation() {
             fadeOut();
