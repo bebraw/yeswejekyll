@@ -20,7 +20,7 @@ require(['jquery', 'foundation', 'scrollto', 'localscroll', 'modernizr'], functi
         initializePatternToggle($('.togglePatterns'));
         initializeTOC($('.toc'), 500);
 
-        $('.toc, :header').localScroll({duration: delay});
+        $('.toc, :header').localScroll({duration: delay, hash: true});
     });
 
     function initializePatternToggle($e) {
