@@ -35,11 +35,13 @@ Unfortunately Jekyll does not come with an easy way to initialize project. Fortu
 $ git clone https://github.com/plusjade/jekyll-bootstrap.git <target>
 $ cd <target>
 
-go and create your GitHub repo now or set up one using hub
+go and create your GitHub repo now
 
 $ git remote add origin <repo address>
 $ git push origin master
 {% endhighlight %}
+
+> If you are a lazy bum like me, consider using [hub](http://defunkt.io/hub/). It integrates well to Git and provides some GitHub related shortcuts. You can clone a repo by simply using `git clone username/project` syntax or create a new one with `git create -d "description"`.
 
 Alternatively you could just do `git init` in some directory and start from nothing. You can build a project quite easily even this way given you know how Jekyll expects projects to be structured.
 
