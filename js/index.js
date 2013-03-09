@@ -5,7 +5,7 @@ require.config({
         scrollto: 'vendor/jquery.scrollTo/jquery.scrollTo.min',
         localscroll: 'vendor/jquery.localScroll/jquery.localScroll.min',
         modernizr: 'vendor/modernizr/modernizr',
-        tokko: 'vendor/jquery.tokko.js/js/dist/jquery.tokko.min'
+        tokko: 'vendor/jquery.tokko.js/dist/jquery.tokko.min'
     },
     shim: {
         foundation: ['jquery'],

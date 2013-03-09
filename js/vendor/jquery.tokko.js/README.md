@@ -19,8 +19,11 @@ h1's are excluded out of the TOC by design. If you think otherwise or have any o
 
 This is just some placeholder to make the demo more effective.
 
+### Just Some Cat
+
 <img src="http://placekitten.com/g/200/300" alt="Just some cat image" />
 
+### And Another One
 
 <img src="http://placekitten.com/g/300/300" alt="Another cat image" />
 
