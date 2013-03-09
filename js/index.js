@@ -3,7 +3,7 @@ require.config({
         foundation: 'foundation/foundation',
         jquery: 'vendor/jquery/jquery',
         scrollto: 'vendor/jquery.scrollTo/jquery.scrollTo.min',
-        localscroll: 'vendor/jquery.localScroll/jquery.localscroll.min',
+        localscroll: 'vendor/jquery.localScroll/jquery.localScroll.min',
         modernizr: 'vendor/modernizr/modernizr',
         tokko: 'vendor/jquery.tokko.js/js/dist/jquery.tokko.min'
     },
