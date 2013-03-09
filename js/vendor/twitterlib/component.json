@@ -1,0 +1,9 @@
+{
+  "name": "twitterlib",
+  "version": "0.0.0",
+  "commit": "5ecb9f5e0fc811f5eb5ad5e5e5c4d7edf3a35126",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/remy/twitterlib.git"
+  }
+}

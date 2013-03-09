@@ -1,0 +1,8 @@
+exclude: ['node_modules']
+project_base: jquery.tokko
+project: jquery.tokko.js
+description: "Generates a table of contents and anchors based on document headers"
+nick: bebraw
+author: Juho Vepsalainen
+license: MIT
+version: 0.1.3

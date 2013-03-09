@@ -1,0 +1,17 @@
+{
+  "name": "jquery.tokko.js",
+  "version": "0.1.3",
+  "main": "js/dist/jquery.tokko.min.js",
+  "dependencies": {
+    "jquery": ">= 1.4.4"
+  },
+  "gitHead": "f933afa76084884ce53946dd381a637ab2c8cd49",
+  "readme": "# jquery.tokko.js - Generates a table of contents and anchors based on document headers\n\njquery.tokko.js has been designed to make it easier to provide decent navigation for guides, tutorials and such. Pretty much all you need to do is to include the build into your site and then execute `$parent.tokko();`. It will generate an element containing a table of contents. It also attaches some anchors to headers to speed up navigation.\n\njquery.tokko.js works great with [jQuery.LocalScroll](http://flesler.blogspot.fi/2007/10/jquerylocalscroll-10.html). Use that if you want some spiffy animations on your site.\n\nh1's are excluded out of the TOC by design. If you think otherwise or have any other development ideas, use the [issue tracker](https://github.com/bebraw/jquery.tokko.js).\n\n## Projects using jquery.tokko.js\n\n* [Yes We Jekyll](http://yeswejekyll.com)\n\n## Acknowledgments\n\n* [mieky](https://github.com/mieky) came up with the name\n* [nikcorg](https://github.com/nikcorg) added CSS transitions\n\n## Placeholder\n\nThis is just some placeholder to make the demo more effective.\n\n<img src=\"http://placekitten.com/g/200/300\" alt=\"Just some cat image\" />\n\n\n<img src=\"http://placekitten.com/g/300/300\" alt=\"Another cat image\" />\n\n## License\n\njquery.tokko.js is available under MIT. See LICENSE for more details.\n",
+  "readmeFilename": "README.md",
+  "_id": "jquery.tokko.js@0.1.3",
+  "description": "jquery.tokko.js has been designed to make it easier to provide decent navigation for guides, tutorials and such. Pretty much all you need to do is to include the build into your site and then execute `$parent.tokko();`. It will generate an element containing a table of contents. It also attaches some anchors to headers to speed up navigation.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bebraw/jquery.tokko.js"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "{{ project }}",
+  "version": "{{ version }}",
+  "main": "js/dist/{{ project_base }}.min.js",
+  "dependencies": {
+    "jquery": ">= 1.4.4"
+  }
+}
