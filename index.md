@@ -187,6 +187,28 @@ This directory contains Jekyll output. Usually you will want to exclude this dir
 
 In case you want to understand better how Jekyll works investigate the output with care.
 
+## Hosting
+
+Hosting Jekyll sites is surprisingly easy. Pretty much all you need to do is to get that `_site` directory data and make it available on some server of yours. As hinted earlier in the introduction [GitHub Pages](https://pages.github.com) provides native support for it so that is definitely an option too, especially if you do not happen to have a server of your own available.
+
+There are some limitations as you cannot use Jekyll plugins [without some hackery](http://charliepark.org/jekyll-with-plugins/) by default. In this case you just host the generated files on GitHub rather than let it compile the output for you.
+
+In case you are happy with the default workflow, I recommend setting up a little script to help you with that. GitHub expects that your site exists within `gh-pages` branch. If you have dealt with branches in Git before you know it is very easy to set up. I like to replicate my `master` branch to `gh-pages`. The basic command for this is `git push origin master:gh-pages`. If the branch does not exist yet, it will create it for you.
+
+I usually maintain a little utility script like this within my repositories to deal with pushing the data:
+
+{% highlight bash %}
+#!/bin/bash
+cd "$(dirname "$0")"
+git push
+git push origin master:gh-pages
+git push --tags
+{% endhighlight %}
+
+That `cd` bit there just makes sure I am executing the commands at the right directory and you might not need it depending on your needs.
+
+Besides GitHub it may be interesting to host your site on [Heroku](http://www.garron.me/blog/deploy-host-jekyll-static-site-free-heroku.html) or [Amazon S3](http://vvv.tobiassjosten.net/development/jekyll-blog-on-amazon-s3-and-cloudfront/). Or you could set up a local proxy server that points to GitHub or any of these services. Oh, the possibilities. You may turn a simple matter of hosting into a complex problem if you really want to just like a good engineer should.
+
 ## Case Study - Koodilehto Site
 
 <img class="right" src="images/koodilehto.png" alt="Koodilehto site"/>
