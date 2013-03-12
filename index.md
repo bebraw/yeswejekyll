@@ -71,6 +71,8 @@ In addition it is a good idea to define a `.gitignore` that contains that `_site
 
 `_config.yml` contains site-wide configuration. It may also be used to define some defaults which Jekyll uses during generation. I recommend setting the following at least to conform with GitHubsettings. There are also [various other configuration options](https://github.com/mojombo/jekyll/wiki/configuration) you might want to study.
 
+Of these options I would like to mention `exclude` in particular. As you might guess that allows you to exclude files and directories from the Jekyll build. Examine that generated `_site` directory as it will give you a better idea of what is included there and what is not.
+
 {% highlight yaml %}
 port: 4000
 auto: true
