@@ -48,6 +48,13 @@ footer a {
     color: rgb(183, 247, 114);
 }
 
+#fork {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
 .picture {
     margin-left: 1em;
     margin-right: 1em;
