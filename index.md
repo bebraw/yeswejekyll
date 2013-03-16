@@ -330,6 +330,12 @@ In case your site has enough traffic volume you could consider AB testing. Effec
 
 I highly recommend looking into testing your design. Just having something that looks subjectively speaking good is not often enough. You will need some data to back that hunch up. That is where concepts such as AB testing or web analytics in general come in handy.
 
+#### Setting Up Analytics
+
+Getting [Google Analytics](http://www.google.com/analytics/) to work on your project is fairly simple. You just need to include their snippet on your default template and off you go. I have instrumented it that way in this project that you just have to set their identifier at `_config.yml` to get it to work.
+
+So in case you are using this project as your template, do that and you have got analytics on your site.
+
 ### Additional Resources
 
 Internet is full of nice design related resources. I have tried to list a few of these below:
@@ -348,12 +354,6 @@ I have tried to gather assorted tricks in this section. By now you should be com
 One of the coolest features of Jekyll for me is the fact that it supports [Pygments](http://pygments.org/). It is a Python based code highlighter. I have used it in this little guide even. You will need to complement its output using some [pygments-css](https://github.com/richleland/pygments-css). In this case I have stuck with `github.css` as it seems to fit the overall theme and it is hard to go wrong with that.
 
 The basic syntax of it is very simple. You simply use {{ "{% highlight language " }}%} and {{ "{% endhighlight " }}%} tags and stash the content to be highlighted between those two. You may even enable line numbers like this: {{ "{% highlight language linenum " }}%}.
-
-### Setting Up Analytics
-
-Getting [Google Analytics](http://www.google.com/analytics/) to work on your project is fairly simple. You just need to include their snippet on your default template and off you go. I have instrumented it that way in this project that you just have to set their identifier at `_config.yml` to get it to work.
-
-So in case you are using this project as your template, do that and you have got analytics on your site.
 
 ### Setting Up Grunt
 
