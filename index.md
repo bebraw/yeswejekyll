@@ -336,6 +336,12 @@ Getting [Google Analytics](http://www.google.com/analytics/) to work on your pro
 
 So in case you are using this project as your template, do that and you have got analytics on your site.
 
+### Syntax Highlighting with Pygments
+
+One of the coolest features of Jekyll for me is the fact that it supports [Pygments](http://pygments.org/). It is a Python based code highlighter. I have used it in this little guide even. You will need to complement its output using some [pygments-css](https://github.com/richleland/pygments-css). In this case I have stuck with `github.css` as it seems to fit the overall theme and it is hard to go wrong with that.
+
+The basic syntax of it is very simple. You simply use {{ "{% highlight language " }}%} and {{ "{% endhighlight " }}%} tags and stash the content to be highlighted between those two. You may even enable line numbers like this: {{ "{% highlight language linenum " }}%}.
+
 ### Additional Resources
 
 Internet is full of nice design related resources. I have tried to list a few of these below:
@@ -345,26 +351,5 @@ Internet is full of nice design related resources. I have tried to list a few of
 * [Design Course for Hackers](http://hackdesign.org/) - If you come from a programming background, check this out.
 * [Method of Action](http://method.ac/) - Design for analytical minds.
 
-## Advanced Tricks
-
-I have tried to gather assorted tricks in this section. By now you should be comfortable in creating very basic sites with Jekyll. It is entirely possible I missed something obvious. If so, just poke me at the [issue tracker](https://github.com/bebraw/yeswejekyll) and I will look into it.
-
-### Syntax Highlighting with Pygments
-
-One of the coolest features of Jekyll for me is the fact that it supports [Pygments](http://pygments.org/). It is a Python based code highlighter. I have used it in this little guide even. You will need to complement its output using some [pygments-css](https://github.com/richleland/pygments-css). In this case I have stuck with `github.css` as it seems to fit the overall theme and it is hard to go wrong with that.
-
-The basic syntax of it is very simple. You simply use {{ "{% highlight language " }}%} and {{ "{% endhighlight " }}%} tags and stash the content to be highlighted between those two. You may even enable line numbers like this: {{ "{% highlight language linenum " }}%}.
-
-### Setting Up Grunt
-
-sudo npm install -g grunt-cli
-
-### Setting Up Twitter Feeds
-
-TBD
-
-### Setting Up Commenting
-
-TBD
-
 ## Conclusion
+
