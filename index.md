@@ -278,6 +278,12 @@ If you cannot find anything that works particularly well, just stick to tried an
 
 As large areas of pure color may look a bit distracting, although this is more of a matter of taste, I tend to use some subtle textures to get rid of this problem. It is very helpful to decide upon a color scheme before moving onto texturing, though. The colors work as a basis for your design and the textures give it some oomph it needs.
 
+### Designing Visual Hierarchy
+
+I think this is one of those bits of design that often gets neglected. It is very important to have a good idea of what is important on a page and what is not. This allows you to make some clear decisions. For instance in this guide I decided that the TOC should not command too much attention. As a result I decided to add a little opacity trick to it on desktop. Hover your cursor on it to see what I mean.
+
+Headlines, selection of fonts, textures, subtle details and even positioning are important parts of a visual hierarchy. These tools allow you to guide the attention of your reader. Sometimes you might even want to be a bit *bold* at your decisions. Whatever is your goal.
+
 ### Picking Subtle Textures
 
 I guess this is one of those things that kind of divide people. Some like to use more grungy textures. Generally I try to stick with something very subtle. I am certain you can achieve a good design in many ways. In this case I will show you how to complement your design with [Subtle Patterns](http://subtlepatterns.com/).
