@@ -320,6 +320,16 @@ If you know what you are doing using more than two is probably alright. If you s
 
 In case you want to know more about [Google Web Fonts](http://www.google.com/webfonts) I suggest checking out their [tutorial](https://developers.google.com/webfonts/docs/getting_started) on the subject. If there is one thing I really must make clear it is the fact that you absolutely must set `font-weight` property to make the output look the same across browsers. Miss that and you might end up with something weird in some other browser rather than the one you are currently using.
 
+### Testing Your Design
+
+How do you know you ended up with a good design? The chances are that you did not. Even experienced designers become blind to the faults at their designs at some point. As we saw in the case of Koodilehto site it can take quite a few iterations to end up with something that does not look entirely like crud. And even if the site looked just fine it can still be useless if the content is not up to it.
+
+As hinted at the case study there are services such as [criticue](http://criticue.com/) and [Feedback Roulette](http://feedbackroulette.com/) that may be beneficial. Of course ideally you will be able to test your design with your target group instead of random people. In fact knowing who you are designing for can open up a few knots and help with the content part. It is much easier to design when you know who is it for.
+
+In case your site has enough traffic volume you could consider AB testing. Effectively AB testing comes down to a simple question: this or that? There are services such as [Optimizely](https://www.optimizely.com/) that provide an easy to use interface for designing these sort of tests and deriving useful metrics out of them. If you are more code oriented person, you might find something like [ABalytics](https://github.com/danmaz74/ABalytics) useful. It integrates well with [Google Analytics](http://www.google.com/analytics/) so you can see the results of your test variants there.
+
+I highly recommend looking into testing your design. Just having something that looks subjectively speaking good is not often enough. You will need some data to back that hunch up. That is where concepts such as AB testing or web analytics in general come in handy.
+
 ### Additional Resources
 
 Internet is full of nice design related resources. I have tried to list a few of these below:
