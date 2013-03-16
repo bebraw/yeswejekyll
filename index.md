@@ -353,3 +353,6 @@ Internet is full of nice design related resources. I have tried to list a few of
 
 ## Conclusion
 
+Jekyll provides a straight-forward way to develop websites. It might not be flawless but combined with hosting possibilities we covered it is a very affordable way to build them. I hope you picked up a few more general tips out of this brief guide. Regardless of the platform web design is always difficult and has its constraints.
+
+In case you feel this guide is missing something or you have discovered a bug, let me know at the [issue tracker](https://github.com/bebraw/yeswejekyll/issues). If you found this guide worth your while, I would appreciate a tweet or even a small donation for my time. You can find the buttons over at TOC over there. Thanks!
