@@ -5,4 +5,5 @@ server: true
 pygments: true
 ga: 'UA-5272959-6'
 title: 'Yes We Jekyll'
+exclude: ['LICENSE', 'README.md', 'Rakefile', 'component.json']
 description: 'Yes We Jekyll! Developing and hosting your own static website or blog has never been easier. In this guide I will show you how to achieve this using the hugely popular Jekyll framework. Even Obama campaign used it so it cannot be that bad!'
