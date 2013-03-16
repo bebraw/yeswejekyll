@@ -314,6 +314,15 @@ If you know what you are doing using more than two is probably alright. If you s
 
 In case you want to know more about [Google Web Fonts](http://www.google.com/webfonts) I suggest checking out their [tutorial](https://developers.google.com/webfonts/docs/getting_started) on the subject. If there is one thing I really must make clear it is the fact that you absolutely must set `font-weight` property to make the output look the same across browsers. Miss that and you might end up with something weird in some other browser rather than the one you are currently using.
 
+### Additional Resources
+
+Internet is full of nice design related resources. I have tried to list a few of these below:
+
+* [Learn CSS Layout](http://learnlayout.com/) - Suitable particularly for beginners. There are some nice tips for seasoned pros as well.
+* [Responsive Design Bookmarklet](http://responsive.victorcoulon.fr/)
+* [Design Course for Hackers](http://hackdesign.org/) - If you come from a programming background, check this out.
+* [Method of Action](http://method.ac/) - Design for analytical minds.
+
 ## Advanced Tricks
 
 I have tried to gather assorted tricks in this section. By now you should be comfortable in creating very basic sites with Jekyll. It is entirely possible I missed something obvious. If so, just poke me at the [issue tracker](https://github.com/bebraw/yeswejekyll) and I will look into it.
@@ -341,7 +350,5 @@ TBD
 ### Setting Up Commenting
 
 TBD
-
-
 
 ## Conclusion
