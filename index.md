@@ -29,7 +29,7 @@ It is actually very easy to get started with Jekyll once you have managed to ins
 
 ### Starting a Project
 
-Unfortunately Jekyll does not come with an easy way to initialize project. As it happens it is very easy to set one up. You could for instance clone [jekyll-bootstrap](http://jekyllbootstrap.com/) repository or even [the one that this site uses](https://github.com/bebraw/yeswejekyll). The basic workflow for initializing a project goes like this:
+Unfortunately Jekyll does not come with an easy way to initialize project. As it happens it is very easy to set one up. You could for instance clone [jekyll-bootstrap](http://jekyllbootstrap.com/) repository or even [the one that this site uses](https://github.com/bebraw/yeswejekyll). The basic workflow for initializing a project based on some other goes like this:
 
 {% highlight bash %}
 $ git clone git://github.com/bebraw/yeswejekyll.git <target>
